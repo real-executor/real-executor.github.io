@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050a14">
+  <title>Real Executor — Dark Neon Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-blue"></div>
+  <div class="ambient ambient-cyan"></div>
+  <div class="ambient ambient-purple"></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#" aria-label="Real Executor home">
+        <span class="brand-mark"><img src="assets/real-logo.png" alt="Real Executor logo"></span>
+        <span class="brand-name">Real Executor</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#language">Changelang</a>
+        <a href="#fixes">Quick Fixes</a>
+        <a href="#status">Status</a>
+        <a class="nav-download" href="#download">Download</a>
+      </nav>
+
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Currently Free &amp; Keyless</div>
+
+        <h1>
+          THE BEST <span>ROBLOX</span><br>
+          EXECUTOR
+        </h1>
+
+        <p class="hero-text">
+          Real Executor is a newly launched, robust executor offering a 98% UNC rate.
+          Currently free and keyless, allowing you to run almost any script flawlessly.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download">Download Now</a>
+          <a class="button button-secondary" href="#showcase">Watch Showcase</a>
+        </div>
+
+        <div class="metrics" id="status">
+          <div class="metric">
+            <strong>98% UNC Rate</strong>
+            <span>Uncertainty Bypass Rate</span>
+          </div>
+          <div class="metric">
+            <strong>Free Keyless</strong>
+            <span>No Activation Required</span>
+          </div>
+          <div class="metric">
+            <strong>Safe &amp; Verified</strong>
+            <span>Scanned &amp; Verified</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Product preview">
+        <div class="visual-glow"></div>
+        <div class="mockup-wrap">
+          <img src="assets/product-interface.png" alt="Real application interface preview">
+          <div class="mockup-shine"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lower-content" id="fixes">
+      <div class="section-card">
+        <div>
+          <span class="mini-label">QUICK FIXES</span>
+          <h2>Fast, clean, focused.</h2>
+          <p>A minimal interface built around the actions that matter most.</p>
+        </div>
+        <a class="button button-secondary small" href="#showcase">Explore</a>
+      </div>
+    </section>
+
+    <section class="showcase" id="showcase">
+      <div class="showcase-copy">
+        <span class="mini-label">SHOWCASE</span>
+        <h2>A premium interface for a focused experience.</h2>
+        <p>
+          Dark surfaces, glass panels, soft gradients and crisp typography keep the
+          interface visually consistent from the landing page to the product.
+        </p>
+      </div>
+      <div class="showcase-panel">
+        <div class="panel-top"><span></span><span></span><span></span></div>
+        <div class="panel-body">
+          <aside>
+            <b>Overview</b>
+            <small>Home</small><small>Account</small><small>Update Log</small><small>Recent Scripts</small>
+          </aside>
+          <div class="dashboard">
+            <div class="dashboard-title">Overview</div>
+            <div class="fake-card">
+              <span>License: Free</span><b>May 30, 2026</b>
+            </div>
+            <div class="fake-card">
+              <span>UNC Test Results</span>
+              <div class="progress"><i></i></div>
+              <b>98%</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section" id="download">
+      <span class="mini-label">GET STARTED</span>
+      <h2>Ready when you are.</h2>
+      <p>This demo landing page keeps the download action as a visual CTA.</p>
+      <a class="button button-primary" href="#" onclick="demoDownload(event)">Download Now</a>
+      <div class="notice" id="downloadNotice" role="status"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Real Executor</span>
+    <span>Dark Neon UI</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
