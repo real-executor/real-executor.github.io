@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="./assets/product-inteface.png" alt="Real Executor" width="900">
+  <img src="assets/product-interface.png" alt="Real Executor" width="900">
 
   <h3>Powerful. Fast. Simple.</h3>
 
