@@ -51,7 +51,7 @@ Download the latest version here:
 
 <div align="center">
 
-<img src="./assets/product-mockup.png" alt="Real Executor Preview" width="850">
+<img src="assets/product-interface.png" alt="Real Executor Preview" width="850">
 
 </div>
 
