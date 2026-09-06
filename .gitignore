@@ -1,0 +1,6 @@
+*.exe
+*.zip
+*.rar
+*.7z
+*.tar.gz
+process_and_push.log
