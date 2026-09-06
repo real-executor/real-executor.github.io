@@ -31,8 +31,8 @@
         <a href="#status">Status</a>
         <a
   class="nav-download"
-  href="https://github.com/real-executor/real-executor.github.io/releases/download/latest/real-installer.zip"
-  download="real-installer.zip" onclick="goatcounter.count({path: 'download-windows-zip', event: true})"
+  href="#"
+  onclick="downloadLatestInstaller(event)"
 >
   Download
 </a>
@@ -137,8 +137,8 @@
       <p>This demo landing page keeps the download action as a visual CTA.</p>
       <a
   class="button button-primary"
-  href="https://github.com/real-executor/real-executor.github.io/releases/download/latest/real-installer.zip"
-  download="real-installer.zip" onclick="goatcounter.count({path: 'download-windows-zip', event: true})"
+  href="#"
+  onclick="downloadLatestInstaller(event)"
 >
   Download Now
 </a>
@@ -151,6 +151,53 @@
     <span>Dark Neon UI</span>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+async function downloadLatestInstaller(event) {
+    event.preventDefault();
+
+    try {
+        const owner = "real-executor";
+        const repo = "real-executor.github.io";
+
+        const res = await fetch(
+            `https://api.github.com/repos/${owner}/${repo}/releases/latest`
+        );
+
+        if (!res.ok) {
+            throw new Error("GitHub API HTTP " + res.status);
+        }
+
+        const release = await res.json();
+
+        const asset = release.assets.find(a =>
+            /^real-installer_\d{6}\.zip$/i.test(a.name)
+        );
+
+        if (!asset) {
+            alert("Файл real-installer_XXXXXX.zip не найден");
+            return;
+        }
+
+        if (typeof goatcounter !== "undefined" && goatcounter.count) {
+            goatcounter.count({
+                path: "download-windows-zip",
+                event: true
+            });
+        }
+
+        window.location.href = asset.browser_download_url;
+
+    } catch (error) {
+        console.error("Download error:", error);
+
+        alert(
+            "Не удалось найти последний билд Real Installer.\n\n" +
+            "Ошибка: " + error.message
+        );
+    }
+}
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
