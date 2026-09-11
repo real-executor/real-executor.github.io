@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/🌐%20LIVE%20DEMO-8A2BE2?style=for-the-badge">
   </a>
   &nbsp;
-  <a href="https://github.com/real-executor/real-executor.github.io/releases/download/latest/real-installer.zip">
+  <a href="https://real-executor.github.io">
     <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD-00C853?style=for-the-badge">
   </a>
 
